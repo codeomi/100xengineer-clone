@@ -1,0 +1,10 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.dashboard-container{
+    display: flex;
+    flex-direction: column;
+}
+
