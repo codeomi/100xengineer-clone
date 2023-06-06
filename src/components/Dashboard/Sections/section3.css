@@ -6,9 +6,9 @@
   font-size: 0.875rem;
 }
 
-.heading-description{
-    text-transform: uppercase;
-    margin-bottom: 10px;
+.heading-description {
+  text-transform: uppercase;
+  margin-bottom: 0;
 }
 .text-weight-light {
   font-weight: 300;
@@ -18,13 +18,13 @@
   color: #a1b1b2;
 }
 
-.company-names, .flex-row{
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-margin-top: 60px;
-
+.company-names,
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 60px; */
 }
 
 .company-card-name {
@@ -43,14 +43,15 @@ margin-top: 60px;
   box-sizing: border-box;
 }
 
-.text-size-regular{
-    font-size: 1.1rem;
+.text-size-regular {
+  font-size: 1.1rem;
 }
 
-.margin-top{
-    margin-top: 5rem;
+.margin-top {
+  margin-top: 5rem;
 }
 
-.font-family-Space{
-    font-family: 'Space Grotesk', sans-serif;
+.font-family-Space {
+  font-family: "Space Grotesk", sans-serif;
 }
+
