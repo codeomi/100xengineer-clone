@@ -6,6 +6,10 @@
   font-size: 0.875rem;
 }
 
+.heading-description{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
 .text-weight-light {
   font-weight: 300;
 }
@@ -14,7 +18,7 @@
   color: #a1b1b2;
 }
 
-.company-names{
+.company-names, .flex-row{
 display: flex;
 flex-direction: row;
 justify-content: center;

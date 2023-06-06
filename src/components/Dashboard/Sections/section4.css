@@ -1,0 +1,33 @@
+.padding-top-btm-container {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.section4-container{
+    margin-top: 4rem ;
+}
+
+.quick-glance-icons-container {
+  display: flex;
+  width: fit-content;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  text-align: center;
+  margin: 0 4rem 0 4rem;
+}
+
+.text-weight-medium {
+  font-weight: 600;
+  text-align: left;
+}
+
+.link-to-form-container{
+    margin-top: 8rem;
+}
+
+.bg-glow{
+  background-image: linear-gradient(180deg, transparent, #11191b 50%, hsla(0, 0%, 100%, 0));z-index: -1;
+}

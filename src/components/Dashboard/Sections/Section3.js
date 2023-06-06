@@ -13,7 +13,7 @@ function Section3() {
             Our students work at places like
           </div>
         </div>
-        <div className="company-names">
+        <div className="company-names flex-row">
           <div className="company-card-name">
             <img
               src="https://www.100xengineers.com/images/ZS_BIG.png"
