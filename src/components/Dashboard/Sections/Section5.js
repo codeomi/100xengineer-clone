@@ -1,6 +1,6 @@
 import React from "react";
 import "./section5.css";
-import Section5Card from "./Section5Card.js";
+import Section5Card from "../Cards/Section5Card.js";
 
 const Section5 = () => {
   return (
