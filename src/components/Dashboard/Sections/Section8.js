@@ -4,7 +4,7 @@ import "./section8.css";
 const Section8 = () => {
   return (
     <>
-      <div className="section8-container section-seperator">
+      <div className="section8-container section-seperator ">
         <div className="heading-container ">
           <div className="heading-description text-size-small text-weight-light body-color">
             OUR MENTORS HAVE GIVEN TECH TALKS AT
