@@ -8,6 +8,7 @@ import Section6 from "./Sections/Section6.js";
 import Section7 from "./Sections/Section7.js";
 import Section8 from "./Sections/Section8.js";
 import Section9 from "./Sections/Section9.js";
+import Section10 from "./Sections/Section10.js";
 
 const Dashboard = () => {
   return (
@@ -21,6 +22,7 @@ const Dashboard = () => {
         <Section7 />
         <Section8 />
         <Section9 />
+        <Section10 />
       </div>
     </>
   );
