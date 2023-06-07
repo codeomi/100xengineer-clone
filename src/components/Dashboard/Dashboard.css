@@ -9,5 +9,6 @@ body{
     flex-direction: column;
     overflow-x: hidden;
     overflow-y: hidden;
+    font-family: 'Space Grotesk', sans-serif;
 }
 

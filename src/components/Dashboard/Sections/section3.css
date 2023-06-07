@@ -27,7 +27,7 @@
   /* margin-top: 60px; */
 }
 
-.company-card-name {
+.company-card-name, .small-card {
   justify-self: center;
   align-self: center;
   display: flex;

@@ -14,7 +14,7 @@ function Section3() {
           </div>
         </div>
         <div className="company-names flex-row">
-          <div className="company-card-name">
+          <div className="company-card-name small-card">
             <img
               src="https://www.100xengineers.com/images/ZS_BIG.png"
               loading="lazy"
