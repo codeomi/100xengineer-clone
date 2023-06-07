@@ -1,0 +1,44 @@
+.section12-container{
+    height: 500px;
+    /* background-color: aqua; */
+}
+.white-button {
+  display: flex;
+  width: 14.8rem;
+  height: 5rem;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: white;
+  transform: rotateX(54deg) rotateY(0deg) rotateZ(0deg);
+  transform-style: preserve-3d;
+}
+
+.white-bottom-btn-3d {
+  transform: translate3d(0px, 0rem, 0px) scale3d(1, 1, 1) rotateX(290deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg);
+  transform-style: preserve-3d;
+  height: 2rem;
+  width: 239.2px;
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: auto;
+  bottom: -0.3rem;
+  background-image: linear-gradient(180deg, #dbdbdb, #fff);
+}
+
+.bg-img-wrapper{
+    height: 400px;
+    /* z-index: 1; */
+    position: relative;
+    top: auto;
+    bottom: 58%;
+
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://www.100xengineers.com/images/Group-56.svg");
+}
+
