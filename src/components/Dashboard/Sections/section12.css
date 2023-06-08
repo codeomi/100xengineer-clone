@@ -1,6 +1,7 @@
-.section12-container{
-    height: 500px;
-    /* background-color: aqua; */
+.section12-container {
+  height: 500px;
+  /* background-color: aqua; */
+  box-sizing: border-box;
 }
 .white-button {
   display: flex;
@@ -29,16 +30,10 @@
   background-image: linear-gradient(180deg, #dbdbdb, #fff);
 }
 
-.bg-img-wrapper{
-    height: 400px;
-    /* z-index: 1; */
-    position: relative;
-    top: auto;
-    bottom: 58%;
-
-  background-position: 50% 50%;
+.bg-img-wrapper {
+  height: 400px;
+  background-position: 50% 45%;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("https://www.100xengineers.com/images/Group-56.svg");
 }
-

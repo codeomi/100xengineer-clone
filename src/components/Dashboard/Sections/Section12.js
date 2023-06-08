@@ -4,7 +4,7 @@ import "./section12.css";
 const Section12 = () => {
   return (
     <>
-      <div className="section12-container section-seperator section-margin-top">
+      <div className="section12-container section-seperator bg-img-wrapper section-margin-top">
         <div className="heading-container margin-bottom ">
           <div className="heading-description text-size-small text-weight-light body-color">
             FUTURE PROOF YOURSELF
@@ -23,7 +23,7 @@ const Section12 = () => {
             Webinar dates to be announced
           </div>
         </div>
-        <div className="bg-img-wrapper"></div>
+       
       </div>
     </>
   );
