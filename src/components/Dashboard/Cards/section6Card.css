@@ -19,12 +19,12 @@
   position: relative;
   padding: 2rem;
 
-  /* margin-top: 6rem; */
+  margin:40px 20px;
 }
 
 .feature-img-wrapper {
   position: relative;
-  top: -6rem;
+  top: -70px;
   display: flex;
   overflow: visible;
   -webkit-box-pack: center;
