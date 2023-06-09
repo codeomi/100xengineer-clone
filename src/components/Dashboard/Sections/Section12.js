@@ -9,7 +9,7 @@ const Section12 = () => {
           <div className="heading-description text-size-small text-weight-light body-color">
             FUTURE PROOF YOURSELF
           </div>
-          <div className="heading text-size-large">
+          <div className="heading h-2 text-size-large">
             Get a taste of the Real Course
           </div>
         </div>
