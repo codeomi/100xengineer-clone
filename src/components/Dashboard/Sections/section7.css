@@ -58,3 +58,40 @@
 .text-link {
   color: #00f0ff;
 }
+
+
+@media only screen and (max-width:600px){
+  .big-card {
+    background-color: aqua;
+    width: 340px;
+    height: 300px;
+    padding-top:10px ;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    background-image: linear-gradient(135deg, #12171c, #0a0d10);
+    background-position: 0px 0px;
+    background-size: auto;
+    background-repeat: repeat;
+    box-shadow: 1px 1px 1px 0 hsla(0, 0%, 100%, 0.26),
+      inset 1px 1px 1px 0 hsla(0, 0%, 100%, 0.29);
+  }
+
+  .big-card-description {
+    font-size: 15px;
+    width: 250px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .question-img {
+    position: relative;
+    left: 60%;
+    top: -19%;
+    right: 10%;
+    bottom: 0%;
+    width: 144px;
+  }
+  
+  
+}

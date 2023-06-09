@@ -4,7 +4,7 @@ import "./section7.css";
 const Section7 = () => {
   return (
     <>
-      <div className="big-card-container flex-center">
+      <div className="big-card-container  mobile-global-padding flex-center">
         <div className="big-card section-seperator">
           <div className="big-card-details">
             <div className="card-heading">Who is this course for?</div>
