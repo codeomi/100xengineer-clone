@@ -5,7 +5,7 @@ import Section2 from "./Section2";
 const Section1 = () => {
   return (
     <>
-      <div className="section-1-container background-img">
+      <div className="section-1-container mobile-global-padding background-img">
         <div className="logo-container">
           <img
             className="logo"
@@ -13,14 +13,18 @@ const Section1 = () => {
             alt="logo"
           />
         </div>
-        <div className="slider-container">
-          <div className="silder-button">Project Based Learning</div>
-          <div className="silder-button">Project Based Learning</div>
-          <div className="silder-button">Project Based Learning</div>
-          <div className="silder-button">Project Based Learning</div>
-          <div className="silder-button">Project Based Learning</div>
+        <div className="slider-container slider">
+        <div class="logo-hiding-div"></div>
+          <div className="slides flex-row">
+            <div className="silder-button">Project Based Learning</div>
+            <div className="silder-button">Project Based Learning</div>
+            <div className="silder-button">Project Based Learning</div>
+            <div className="silder-button">Project Based Learning</div>
+            <div className="silder-button">Project Based Learning</div>
+          </div>
+        <div class="logo-hiding-div"></div>
         </div>
-        <Section2/>
+        <Section2 />
       </div>
     </>
   );

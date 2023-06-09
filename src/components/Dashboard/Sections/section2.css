@@ -80,3 +80,92 @@ line-height: 1.5;
 font-family: 'Space Grotesk', sans-serif;
 color: #fff;
 }
+
+@media only screen and (max-width:600px){
+  .heading {
+    font-family: "Spline Sans", sans-serif;
+    color: #fff;
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .heading-description{
+    font-weight: 500;
+  }
+  
+  .text-size-medium {
+    font-size: 16px;
+    color: #a1b1b2;
+  }
+  
+  .btn-custom-2 {
+    display: flex;
+    width: 14.8rem;
+    height: 5rem;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-image: linear-gradient(180deg, #00f0ff 50%, #00ffc2);
+    transform: rotateX(54deg) rotateY(0deg) rotateZ(0deg);
+    transform-style: preserve-3d;
+  }
+  
+  .bottom-btn-3d {
+    transform: translate3d(0px, 0rem, 0px) scale3d(1, 1, 1) rotateX(290deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg);
+    transform-style: preserve-3d;
+    height: 2rem;
+    width: 239.2px;
+    position: absolute;
+    left: auto;
+    top: auto;
+    right: auto;
+    bottom: -0.3rem;
+    background-image: linear-gradient(180deg, #00c0cc, #00cc9b 73%);
+  }
+  
+  .btn-container-3d {
+    position: relative;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    perspective: 2000px;
+    align-items: center;
+    perspective-origin: 50% 50%;
+    transform: translate(0px, 0px);
+    transition: all 500ms ease-in-out;
+    text-decoration: none;
+  }
+  .heading-button, .bottom-btn-3d{
+      transition: all 0.3s;
+  }
+  .heading-button .bottom-btn-3d:hover {
+    transform: scaley(0.8);
+  }
+  
+  .button-container{
+      margin: 50px 0 30px 0 ;
+  }
+  
+  .btn-text-3d {
+    position: absolute;
+    top: 1.6rem;
+    z-index: 2;
+    color:rgba(0,0,0,0.850);
+    font-weight: 600;
+  }
+  
+  .dates{
+      font-size: 1rem;
+  line-height: 1.5;
+  font-family: 'Space Grotesk', sans-serif;
+  color: #fff;
+  }
+}

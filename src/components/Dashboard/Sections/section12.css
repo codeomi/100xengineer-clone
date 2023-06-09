@@ -35,5 +35,6 @@
   background-position: 50% 45%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("https://www.100xengineers.com/images/Group-56.svg");
+  background-image:linear-gradient(180deg, #0a0d10, hsla(0, 0%, 100%, 0) 36%),
+    linear-gradient(0deg, #0a0d10 1%, rgba(10, 13, 16, 0.1) 24%), url("https://www.100xengineers.com/images/Group-56.svg");
 }

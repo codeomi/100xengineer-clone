@@ -23,7 +23,6 @@ const Section12 = () => {
             Webinar dates to be announced
           </div>
         </div>
-       
       </div>
     </>
   );
