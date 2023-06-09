@@ -27,7 +27,8 @@
   /* margin-top: 60px; */
 }
 
-.company-card-name, .small-card {
+.company-card-name,
+.small-card {
   justify-self: center;
   align-self: center;
   display: flex;
@@ -55,3 +56,127 @@
   font-family: "Space Grotesk", sans-serif;
 }
 
+
+
+@media only screen and (max-width: 1200px) {
+  .section3-container {
+    margin-top: 50px;
+  }
+
+  .text-size-small {
+    font-size: 0.875rem;
+  }
+
+  .heading-description {
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+  .text-weight-light {
+    font-weight: 300;
+  }
+
+  .body-color {
+    color: #a1b1b2;
+  }
+
+  .company-names,
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 60px; */
+  }
+
+  .company-card-name,
+  .small-card {
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    width: 15rem;
+    height: 4rem;
+    padding: 1.5rem 2.5rem;
+    margin: 5px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #10151a;
+    box-sizing: border-box;
+  }
+
+  .text-size-regular {
+    font-size: 1.1rem;
+  }
+
+  .margin-top {
+    margin-top: 5rem;
+  }
+
+  .font-family-Space {
+    font-family: "Space Grotesk", sans-serif;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .section3-container {
+    margin-top: 50px;
+  }
+  .h-2 {
+    font-size: 32px;
+  }
+  .text-size-small {
+    font-size: 0.875rem;
+  }
+
+  .heading-description {
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+  .text-weight-light {
+    font-weight: 300;
+  }
+
+  .body-color {
+    color: #a1b1b2;
+  }
+
+  .company-names,
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* margin-top: 60px; */
+  }
+
+  .company-card-name,
+  .small-card {
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    width: 150px;
+    height: 4rem;
+    padding: 24px 40px;
+    /* margin: 5px; */
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #10151a;
+    box-sizing: border-box;
+  }
+
+  .text-size-regular {
+    font-size: 18px;
+  }
+
+  /* .margin-top {
+    margin-top: 10px;
+  } */
+
+  .font-family-Space {
+    font-family: "Space Grotesk", sans-serif;
+  }
+}

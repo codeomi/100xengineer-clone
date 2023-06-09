@@ -4,12 +4,12 @@ import "./section3.css";
 function Section3() {
   return (
     <>
-      <div className="section3-container">
+      <div className="section3-container mobile-global-padding">
         <div className="heading-container">
           <div className="heading-description text-size-small text-weight-light body-color">
             PLACEMENT ASSITANCE PROVIDED
           </div>
-          <div className="heading text-size-large">
+          <div className="heading h-2 text-size-large">
             Our students work at places like
           </div>
         </div>
