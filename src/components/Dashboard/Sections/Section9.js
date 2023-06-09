@@ -4,7 +4,7 @@ import "./section9.css";
 const Section9 = () => {
   return (
     <>
-      <div className="section9-container section-seperator section-margin-top">
+      <div className="section9-container  mobile-global-padding  section-seperator section-margin-top">
         <div className="heading-container margin-bottom ">
           <div className="heading-description text-size-small text-weight-light body-color">
             testimonials
