@@ -43,7 +43,7 @@ function Section3() {
           </div>
           <div className="company-card-name">
             <img
-              src="hhttps://www.100xengineers.com/images/oyo.svg"
+              src="https://www.100xengineers.com/images/oyo.svg"
               loading="lazy"
               // sizes="126px"
               alt=""
