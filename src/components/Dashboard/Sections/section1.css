@@ -84,9 +84,16 @@
   .logo {
     height: 40px;
   }
+
+  .slides{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
   
   .slider-container {
     display: flex;
+    
     padding: 0.35rem 0.5rem;
     margin-top: 3vh;
     -webkit-box-pack: center;

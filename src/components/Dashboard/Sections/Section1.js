@@ -15,7 +15,7 @@ const Section1 = () => {
         </div>
         <div className="slider-container slider">
         <div class="logo-hiding-div"></div>
-          <div className="slides flex-row">
+          <div className="slides">
             <div className="silder-button">Project Based Learning</div>
             <div className="silder-button">Project Based Learning</div>
             <div className="silder-button">Project Based Learning</div>
