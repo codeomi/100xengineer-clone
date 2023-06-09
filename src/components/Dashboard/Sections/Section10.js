@@ -18,7 +18,26 @@ const Section10 = () => {
           </div>
           <div className="curicullum-card text-size-small">Interview Prep</div>
         </div>
-        <div className="varibale-table"></div>
+        <div className="varibale-table">
+          <div className="tab-heading color-cyan">Theory</div>
+          <div className="bullet-points">
+            <ul>
+              <li>
+                <strong>Weekend Live</strong> lectures by top developers
+              </li>
+              <li>
+                <strong> 40+ hours</strong> of video lectures on HTML/CSS,
+                JavaScript, ReactJS, NodeJS, and High-Quality coding standards{" "}
+              </li>
+              <li>
+                <strong> Personalized coaching </strong> on technical & soft skills to make you an all-round product engineer.
+              </li>
+              <li>
+                High focus on making you <strong> global-ready </strong>
+              </li>
+            </ul>
+          </div>
+        </div>
         <div className="btn-wrapper">
           <a href="/" className="button-container btn-container-3d">
             <div className="heading-button btn-custom-2 btn"></div>

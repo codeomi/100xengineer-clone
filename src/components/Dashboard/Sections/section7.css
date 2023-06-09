@@ -75,6 +75,7 @@
     background-repeat: repeat;
     box-shadow: 1px 1px 1px 0 hsla(0, 0%, 100%, 0.26),
       inset 1px 1px 1px 0 hsla(0, 0%, 100%, 0.29);
+      margin-top: 0;
   }
 
   .big-card-description {

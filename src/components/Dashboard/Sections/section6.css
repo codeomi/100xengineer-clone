@@ -77,6 +77,10 @@
     justify-content: center;
   }
 
+  .section-seperator{
+    margin-top: 100px;
+  }
+
   /* .global-padding {
     padding-right: 16rem;
     padding-left: 16rem;
