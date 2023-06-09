@@ -5,12 +5,12 @@ import Section6Card from "../Cards/Section6Card";
 const Section6 = () => {
   return (
     <>
-      <div className="section6-container section-seperator">
+      <div className="section6-container   mobile-global-padding section-seperator">
         <div className="heading-container">
-          <div className="heading-description text-size-small text-weight-light body-color">
+          <div className="heading-description">
             become a world class coder in just 3 months
           </div>
-          <div className="heading text-size-large">
+          <div className="heading h-2 text-size-large">
             Coders make some of the highest <br /> salaries globally
           </div>
         </div>
@@ -36,7 +36,7 @@ const Section6 = () => {
             img="https://www.100xengineers.com/images/Group-59.svg"
           />
         </div>
-        <div className="feature-grid global-padding">
+        <div className="feature-grid ">
           {" "}
           <div className="feature-card grid-area-1">
             <div className="text-size-regular font-color-white">

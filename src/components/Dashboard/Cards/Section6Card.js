@@ -6,7 +6,7 @@ const Section6Card = ({ img, heading, description }) => {
     <>
       <div className="section6-card-container">
         <div className="feature-img-wrapper">
-          <img src={img} alt="" />
+          <img className="section6-img" src={img} alt="" />
         </div>
         <div className="feature-content-wrap">
           <div className="card-heading">{heading}</div>

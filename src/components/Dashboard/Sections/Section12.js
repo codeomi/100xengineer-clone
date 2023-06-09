@@ -5,7 +5,7 @@ const Section12 = () => {
   return (
     <>
       <div className="section12-container section-seperator bg-img-wrapper section-margin-top">
-        <div className="heading-container margin-bottom ">
+        <div className="heading-container  margin-bottom ">
           <div className="heading-description text-size-small text-weight-light body-color">
             FUTURE PROOF YOURSELF
           </div>

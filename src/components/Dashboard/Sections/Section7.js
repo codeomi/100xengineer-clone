@@ -12,13 +12,23 @@ const Section7 = () => {
               Anyone who is looking to upskill themselves via learning React -
               no prior experience in React is required. <br />
               <br />
-           Be it you're a college student, fresher at a company or
-              have a few years of experience, this is for anyone who wants to
-              become a world-class React Developer.
+              Be it you're a college student, fresher at a company or have a few
+              years of experience, this is for anyone who wants to become a
+              world-class React Developer.
             </div>
-            <div className="text-link link-button">Join Free Webinar <img src="https://www.100xengineers.com/images/Caret-right.svg" alt="" /></div>
+            <div className="text-link link-button">
+              Join Free Webinar{" "}
+              <img
+                src="https://www.100xengineers.com/images/Caret-right.svg"
+                alt=""
+              />
+            </div>
           </div>
-          <img className="question-img" src="https://www.100xengineers.com/images/Frame-98.svg" alt="" />
+          <img
+            className="question-img"
+            src="https://www.100xengineers.com/images/Frame-98.svg"
+            alt=""
+          />
         </div>
       </div>
     </>
