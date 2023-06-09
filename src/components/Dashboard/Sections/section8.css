@@ -1,7 +1,16 @@
-.small-card{
-    font-size: 1.2rem;color: #fff;font-weight: 700;
+.small-card {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 700;
 }
 
-.margin-top{
-    margin-top: 4.5rem;
+.margin-top {
+  margin-top: 4.5rem;
+}
+
+@media only screen and (max-width:600px) {
+    .small-card{
+        width: 170px;
+    }
+    
 }

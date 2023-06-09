@@ -9,7 +9,7 @@ const Section8 = () => {
           <div className="heading-description text-size-small text-weight-light body-color">
             OUR MENTORS HAVE GIVEN TECH TALKS AT
           </div>
-          <div className="heading text-size-large">
+          <div className="heading h-2 text-size-large">
             Inspired and mentored thousands
           </div>
         </div>
