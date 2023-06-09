@@ -5,7 +5,7 @@ import SkillsCard from "../Cards/SkillsCard.js";
 const Section11 = () => {
   return (
     <>
-      <div className="section11-container section-seperator section-margin-top">
+      <div className="section11-container  mobile-global-padding section-seperator section-margin-top">
         <div className="heading-container margin-bottom ">
           <div className="heading-description text-size-small text-weight-light body-color">
             getting into it
@@ -47,7 +47,7 @@ const Section11 = () => {
             <SkillsCard text="Data Management" />
           </div>
         </div>
-        <div className="text-size-regular text-weight-light body-color  font-family-Space margin-top">and many more practical skills</div>
+        <div className="text-size-regular text-weight-light body-color  font-family-Space margin-top end-p">and many more practical skills</div>
       </div>
     </>
   );
