@@ -41,3 +41,54 @@
   max-width: 16rem;
   text-align: start;
 }
+
+@media only screen and (max-width: 1200px) {
+
+
+}
+
+
+@media only screen and (max-width: 600px) {
+  .card-container {
+   
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-align: center;
+    border-radius: 1rem;
+    background-color: #0a0d10;
+    box-shadow: inset 0 0 7px 0 hsla(0, 0%, 80%, 0.22);
+    padding: 24px 0 24px 25px;
+    text-align: start;
+    width: 300px;
+    height: fit-content;
+    margin: 5px 25px;
+  }
+
+  .image-container {
+    margin-bottom: 1rem;
+  }
+
+  .small-image {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+
+  .card-heading {
+    color: #fff;
+  font-size: 14px;
+    line-height: 1.5;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .card-description {
+    width: 400px;
+
+    text-align: start;
+  }
+}

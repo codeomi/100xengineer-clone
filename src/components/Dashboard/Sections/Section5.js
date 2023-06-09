@@ -5,12 +5,12 @@ import Section5Card from "../Cards/Section5Card.js";
 const Section5 = () => {
   return (
     <>
-      <div className="section5-container section-seperator">
+      <div className="section5-container section-seperator  mobile-global-padding">
         <div className="heading-container">
           <div className="heading-description text-size-small text-weight-light body-color">
             WHY LEARN REACT?
           </div>
-          <div className="heading text-size-large">Future proof yourself</div>
+          <div className="heading text-size-large h-2">Future proof yourself</div>
         </div>
         <div className="lines-bg">
           <div className="black-box-bg">

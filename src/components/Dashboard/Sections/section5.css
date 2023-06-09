@@ -1,3 +1,4 @@
+
 .section-seperator {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -6,8 +7,28 @@
 .black-box-bg{
     background-image: linear-gradient(90deg, rgba(10, 13, 16, 0), #0a0d10 21%, #0a0d10 86%, hsla(0, 0%, 100%, 0));
 }
-
 .lines-bg {
+  height: 400px;
+  /* z-index: -1; */
+  position: relative;
+  top: 30;
+  bottom: 20;
+
+background-position: 50% 50%;
+background-size: cover;
+background-repeat: no-repeat;
+background-image: url("https://www.100xengineers.com/images/Lines.svg");
+}
+
+
+@media only screen and (max-width:1200px) {
+ 
+
+}
+
+
+@media only screen and (max-width:600px) {
+  .lines-bg {
     height: 400px;
     /* z-index: -1; */
     position: relative;
@@ -17,7 +38,7 @@
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("https://www.100xengineers.com/images/Lines.svg");
+  background-image: none;
 }
-
+}
 
