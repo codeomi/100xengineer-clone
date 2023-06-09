@@ -9,12 +9,12 @@ const Section9 = () => {
           <div className="heading-description text-size-small text-weight-light body-color">
             testimonials
           </div>
-          <div className="heading text-size-large">Word on the street</div>
+          <div className="heading h-2 text-size-large">Word on the street</div>
         </div>
         <div className="testimonial-container flex-center margin-top">
           <div className="flex-row">
-            <div className="col-testimony-container">
-              <div className="col-testimony testimony box-shadow-light">
+            <div className="col-testimony-container ">
+              <div className="col-testimony mobile-testimony-container testimony box-shadow-light">
                 <div className="client-details">
                   <div className="img-container">
                     <img
@@ -43,7 +43,7 @@ const Section9 = () => {
               </div>
             </div>
             <div className="row-testimony-container">
-              <div className="row-testimony  box-shadow-light">
+              <div className="row-testimony mobile-testimony-container  box-shadow-light">
                 <div className="client-details">
                   <div className="img-container">
                     <img
@@ -67,7 +67,7 @@ const Section9 = () => {
                   career - I got placed in JP Morgan after the training.
                 </div>
               </div>
-              <div className="row-testimony  box-shadow-light">
+              <div className="row-testimony mobile-testimony-container  box-shadow-light">
                 <div className="client-details">
                   <div className="img-container">
                     <img
