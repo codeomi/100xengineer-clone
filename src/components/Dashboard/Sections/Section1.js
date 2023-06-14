@@ -13,17 +13,29 @@ const Section1 = () => {
             alt="logo"
           />
         </div>
-        <div className="slider-container slider">
-        <div class="logo-hiding-div"></div>
-          <div className="slides">
-            <div className="silder-button">Project Based Learning</div>
-            <div className="silder-button">Project Based Learning</div>
-            <div className="silder-button">Project Based Learning</div>
-            <div className="silder-button">Project Based Learning</div>
-            <div className="silder-button">Project Based Learning</div>
+        <div className="slider-container">
+          <div class="logo-hiding-div-left slider-hiding"></div>
+          <div className="slides  slider">
+            <div className="silder-button slider-animation">
+              Project Based Learning
+            </div>
+            <div className="silder-button slider-animation">Live Classes</div>
+            <div className="silder-button slider-animation">
+              Real World Assistance
+            </div>
+            <div className="silder-button slider-animation">
+              Placement Assistance
+            </div>
+            <div className="silder-button slider-animation">
+              Placement Assistance
+            </div>
+            <div className="silder-button slider-animation">
+              Elite Developer Community
+            </div>
           </div>
-        <div class="logo-hiding-div"></div>
+          <div class="logo-hiding-div-right slider-hiding"></div>
         </div>
+        
         <Section2 />
       </div>
     </>

@@ -28,20 +28,36 @@
 .slider-container {
   display: flex;
   padding: 0.35rem 0.5rem;
+  width: fit-content;
+position: relative;
   margin-top: 3vh;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   border-radius: 0.5rem;
-
+  margin-left: 445px;
   box-shadow: inset 1px 0 3.1px 0 rgba(0, 240, 255, 0.24);
+}
+
+/* .slider-hiding{
+  width: 300px;
+  background-color: aliceblue;
+} */
+
+.logo-hiding-div-left{
+  position: absolute;
+
+}
+.logo-hiding-div-right{
+  position: absolute;
+  top: auto;
 }
 
 .silder-button {
   color: #00f0ff;
-  width: fit-content;
+  width: 500px;
   box-sizing: border-box;
   font-size: 1.5vh;
   border-radius: 4px;
@@ -49,14 +65,32 @@
   border-width: 0.1px;
   margin: 0 6px;
   padding: 4px 5px;
-  white-space: nowrap;
-  display: block;
+  /* white-space: nowrap; */
+  
 }
 
 .slides{
   display: flex;
   flex-direction: row;
+  width: 600px;
+  /* background-color: antiquewhite; */
+  overflow: hidden;
 }
+
+.slides{
+  /* animation: slider 5s linear infinite; */
+  /* background-color: aliceblue; */
+  
+}
+
+/* @keyframes slider {
+  0% {
+    transform: translateX(70%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+} */
 
 
 @media only screen and (max-width:600px){
