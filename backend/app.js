@@ -3,6 +3,7 @@ const app = express();
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const { google } = require("googleapis");
+const FormData = require("./model/FormData");
 
 const connectToDatabase = require("./config/db");
 
@@ -12,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 connectToDatabase();
 
-app.get("/", async (req, res) => {
+app.post("/", async (req, res) => {
   const spreadSheetId = "1CYT-kbnaaefR6fKM8aUqKysxSnrcdprIMXM2SnHEEBA";
 
   const auth = new google.auth.GoogleAuth({
@@ -28,26 +29,53 @@ app.get("/", async (req, res) => {
 
   //Get metaData from googlesheets
   try {
-     const metaData = await googleSheets.spreadsheets.get({
-    auth,
-    spreadsheetId:spreadSheetId,
-  });
-//   res.send(metaData.data);
+    const metaData = await googleSheets.spreadsheets.get({
+      auth,
+      spreadsheetId: spreadSheetId,
+    });
+    //   res.send(metaData.data);
   } catch (error) {
     console.error("Error retrieving spreadsheet metadata:", error);
     res.status(500).send("Internal Server Error");
   }
 
+  //gives us row values in array format
   const getRows = await googleSheets.spreadsheets.values.get({
     auth,
-    spreadsheetId:spreadSheetId,
-    range:"Form responses 1",
+    spreadsheetId: spreadSheetId,
+    range: "Form responses 1",
   });
 
-  res.send(getRows.data.values)
-  res.send(JSON.parse(getRows.data.values))
-  console.log(getRows.values)
- 
+  //deleting the first the element of the data as it is name of rows
+  const firstDataDelete = getRows.data.values.shift();
+  const newFormData = [];
+  const oldData=[]
+
+
+  //giving each row data a key
+  getRows.data.values.forEach((user) => {
+    const updateUser = {
+      email: user[3],
+      name: user[2],
+      phone: user[4],
+      employmentStatus: user[5],
+      city: user[6],
+      date: user[0],
+    };
+    newFormData.push(updateUser);
+  });
+
+  const newUser = newFormData.filter((user)=>{user !== oldData})
+
+
+  try {
+    await FormData.create(newFormData);
+    console.log("Responses saved to MongoDB");
+    res.send("Responses saved to MongoDB");
+  } catch (error) {
+    console.error("Error saving responses to MongoDB:", error);
+    res.status(500).send("Internal Server Error");
+  }
 });
 
 module.exports = app;
