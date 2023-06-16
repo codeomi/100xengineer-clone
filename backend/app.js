@@ -49,8 +49,6 @@ app.post("/", async (req, res) => {
   //deleting the first the element of the data as it is name of rows
   const firstDataDelete = getRows.data.values.shift();
   const newFormData = [];
-  const oldData=[]
-
 
   //giving each row data a key
   getRows.data.values.forEach((user) => {
@@ -62,20 +60,27 @@ app.post("/", async (req, res) => {
       city: user[6],
       date: user[0],
     };
+
     newFormData.push(updateUser);
   });
 
-  const newUser = newFormData.filter((user)=>{user !== oldData})
+  const oldData = await FormData.find();
+  console.log("Old data:", oldData);
+  
+  const newUsers = await FormData.find().where("email").nin(oldData.map(item => item.email));
+  console.log("New users:", newUsers);
+  
+  
 
-
-  try {
-    await FormData.create(newFormData);
-    console.log("Responses saved to MongoDB");
-    res.send("Responses saved to MongoDB");
-  } catch (error) {
-    console.error("Error saving responses to MongoDB:", error);
-    res.status(500).send("Internal Server Error");
-  }
+    try {
+      await FormData.create(newFormData);
+      console.log("Responses saved to MongoDB");
+      res.send("Responses saved to MongoDB");
+    } catch (error) {
+      console.error("Error saving responses to MongoDB:", error);
+      res.status(500).send("Internal Server Error");
+    }
+  
 });
 
 module.exports = app;

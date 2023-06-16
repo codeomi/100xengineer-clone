@@ -1,161 +1,46 @@
-.section-1-container {
-  /* height: 40vh; */
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-.background-img {
-  background-image: linear-gradient(180deg, #0a0d10, hsla(0, 0%, 100%, 0) 36%),
-    linear-gradient(0deg, #0a0d10 1%, rgba(10, 13, 16, 0.1) 24%),
-    url("../../../assets/images/Frame-40132.png");
-  background-position: 0px 0px, 0px 0px, 50% 100%;
-  background-size: cover;
-  background-repeat: repeat, repeat, no-repeat;
-  height: 50rem;
-}
-.logo-container {
-  height: 2vh;
-  margin-top: 2vh;
-  margin-bottom: 3vh;
-}
-
-.logo {
-  height: 40px;
-}
-
-.slider-container {
-  display: flex;
-  padding: 0.35rem 0.5rem;
-  width: fit-content;
-position: relative;
-  margin-top: 3vh;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0.5rem;
-  margin-left: 445px;
-  box-shadow: inset 1px 0 3.1px 0 rgba(0, 240, 255, 0.24);
-}
-
-/* .slider-hiding{
-  width: 300px;
-  background-color: aliceblue;
-} */
-
-.logo-hiding-div-left{
-  position: absolute;
-
-}
-.logo-hiding-div-right{
-  position: absolute;
-  top: auto;
-}
-
-.silder-button {
-  color: #00f0ff;
-  width: 500px;
+.section12-container {
+  height: 500px;
+  /* background-color: aqua; */
   box-sizing: border-box;
-  font-size: 1.5vh;
-  border-radius: 4px;
-  border: solid #00eeff80;
-  border-width: 0.1px;
-  margin: 0 6px;
-  padding: 4px 5px;
-  /* white-space: nowrap; */
-  
 }
-
-.slides{
+.white-button {
   display: flex;
-  flex-direction: row;
-  width: 600px;
-  /* background-color: antiquewhite; */
-  overflow: hidden;
+  width: 14.8rem;
+  height: 5rem;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: white;
+  transform: rotateX(54deg) rotateY(0deg) rotateZ(0deg);
+  transform-style: preserve-3d;
 }
 
-.slides{
-  /* animation: slider 5s linear infinite; */
-  /* background-color: aliceblue; */
-  
+.white-bottom-btn-3d {
+  transform: translate3d(0px, 0rem, 0px) scale3d(1, 1, 1) rotateX(290deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg);
+  transform-style: preserve-3d;
+  height: 2rem;
+  width: 239.2px;
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: auto;
+  bottom: -0.3rem;
+  background-image: linear-gradient(180deg, #dbdbdb, #fff);
 }
 
-/* @keyframes slider {
-  0% {
-    transform: translateX(70%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-} */
-
+.bg-img-wrapper {
+  height: 400px;
+  background-position: 50% 45%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image:linear-gradient(180deg, #0a0d10, hsla(0, 0%, 100%, 0) 36%),
+    linear-gradient(0deg, #0a0d10 1%, rgba(10, 13, 16, 0.1) 24%), url("https://www.100xengineers.com/images/Group-56.svg");
+}
 
 @media only screen and (max-width:600px){
-  .mobile-global-padding{
-    padding: 0 10px;
-  }
-  .section-1-container {
-    /* height: 40vh; */
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    padding-top: 20px;
-    padding-bottom: 3rem;
-  }
-  .background-img {
-    background-image: linear-gradient(180deg, #0a0d10, hsla(0, 0%, 100%, 0) 36%),
-      linear-gradient(0deg, #0a0d10 1%, rgba(10, 13, 16, 0.1) 24%),
-      url("../../../assets/images/Frame-40132.png");
-    background-position: 0px 0px, 0px 0px, 50% 100%;
-    background-size: cover;
-    background-repeat: repeat, repeat, no-repeat;
-    height: 50rem;
-  }
-  .logo-container {
-    height: 2vh;
-    margin-top: 2vh;
-    margin-bottom: 3vh;
-  }
-  
-  .logo {
-    height: 40px;
-  }
-
-  .slides{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-  
-  .slider-container {
-    display: flex;
-    
-    padding: 0.35rem 0.5rem;
-    margin-top: 3vh;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    align-items: flex-start;
-    border-radius: 0.5rem;
-  
-    box-shadow: inset 1px 0 3.1px 0 rgba(0, 240, 255, 0.24);
-  }
-  
-  .silder-button {
-    color: #00f0ff;
-    width: fit-content;
-    box-sizing: border-box;
-    font-size: 1.5vh;
-    border-radius: 4px;
-    border: solid #00eeff80;
-    border-width: 0.1px;
-    margin: 0 6px;
-    padding: 4px 5px;
-    white-space: nowrap;
-    display: block;
+  .section-seperator{
+    margin-top: 130px ;
   }
 }
