@@ -2,10 +2,13 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const dotenv = require("dotenv")
 const { google } = require("googleapis");
 const FormData = require("./model/FormData");
 
+
 const connectToDatabase = require("./config/db");
+dotenv.config({path:"./config/.env"})
 
 // Middleware
 app.use(express.json());
@@ -14,7 +17,7 @@ app.use(cors());
 connectToDatabase();
 
 app.post("/", async (req, res) => {
-  const spreadSheetId = "1CYT-kbnaaefR6fKM8aUqKysxSnrcdprIMXM2SnHEEBA";
+  const spreadSheetId = process.env.SPREADSHEET_ID;
 
   const auth = new google.auth.GoogleAuth({
     keyFile: "credentials.json",
