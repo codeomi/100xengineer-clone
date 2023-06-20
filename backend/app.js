@@ -2,19 +2,17 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const dotenv = require("dotenv")
+const dotenv = require("dotenv");
 const { google } = require("googleapis");
 const FormData = require("./model/FormData");
 
-
-const connectToDatabase = require("./config/db");
-dotenv.config({path:"./config/.env"})
+const connection = require("./config/db");
+dotenv.config({ path: "./config/.env" });
 
 // Middleware
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
-connectToDatabase();
 
 app.post("/", async (req, res) => {
   const spreadSheetId = process.env.SPREADSHEET_ID;
@@ -30,7 +28,7 @@ app.post("/", async (req, res) => {
   //Instance of googlesheets api
   const googleSheets = google.sheets({ version: "v4", auth: client });
 
-  //Get metaData from googlesheets
+  //Get metaData from googlesheets :NOT REQUIRED IGNORE
   try {
     const metaData = await googleSheets.spreadsheets.get({
       auth,
@@ -67,23 +65,35 @@ app.post("/", async (req, res) => {
     newFormData.push(updateUser);
   });
 
-  const oldData = await FormData.find();
-  console.log("Old data:", oldData);
-  
-  const newUsers = await FormData.find().where("email").nin(oldData.map(item => item.email));
-  console.log("New users:", newUsers);
-  
-  
-
-    try {
-      await FormData.create(newFormData);
-      console.log("Responses saved to MongoDB");
-      res.send("Responses saved to MongoDB");
-    } catch (error) {
-      console.error("Error saving responses to MongoDB:", error);
+  //getting existing data from sql
+  connection.query("SELECT * FROM FormData", async (error, oldData) => {
+    if (error) {
+      console.error("Error retrieving old data from MySQL:", error);
       res.status(500).send("Internal Server Error");
+      return;
     }
-  
+    console.log("Old data:", oldData);
+
+    const newUsers = newFormData.filter(
+      (formData) => !oldData.some((oldForm) => oldForm.email === formData.email)
+    );
+    console.log("New users:", newUsers);
+
+    //inserting new data from google sheets
+    connection.query(
+      "INSERT INTO FormData (email, name, phone, employmentStatus, city, date) VALUES ?",
+      [newUsers.map((user) => Object.values(user))],
+      async (error) => {
+        if (error) {
+          console.error("Error saving responses to MySQL:", error);
+          res.status(500).send("Internal Server Error");
+          return;
+        }
+        console.log("Responses saved to MySQL");
+        res.send("Responses saved to MySQL");
+      }
+    );
+  });
 });
 
 module.exports = app;
